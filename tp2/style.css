@@ -1,0 +1,1559 @@
+:root{
+    --principal: #1D2429;
+    --sombra-ppal-1: #0B171F;
+    --sombra-ppal-2: #08141C;
+    --luz-ppal-1: #3A444B;
+    --luz-ppal-2: #54616B;
+    --secundario: #0005FD;
+    --sombra-sec-1: #0005BE;
+    --sombra-sec-2: #010594;
+    --luz-sec-1: #1E34FF;
+    --luz-sec-2: #B5D4EC;
+    --estado1: #3BC82F;
+    --estado2: #D71212;
+    --estado3: #EEE73C;
+    --acento: #D4AF37;
+    --sombra-acento: #B18E1A;
+    --text-body:'Roboto';
+}
+    .baseCucarda{
+    display: none;
+    }
+    body, header, footer,span{
+    font-family: var(--text-body);
+    }
+    body{
+        margin: 0px;
+    background-color: var(--sombra-ppal-1);
+    }
+
+    header{
+        background-color:var(--principal);
+        height: 70px;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    .buscador{
+    display: none;
+    }
+
+    .navbar{
+        background-color:var(--principal);
+        width: 219px;
+        height: 470px;
+        color: var(--luz-sec-2);
+        display: none;
+        flex-direction: column;
+        font:var(--textos-btn);
+        text-transform: uppercase;
+        text-decoration: solid;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .logoheader{
+        width: 95px;
+        height: 75px;
+    }
+    .btnmenu{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        
+    }
+    .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-color: var(--luz-sec-2);
+    }
+    .header-izq{
+        flex-direction: row;
+        margin: 0;
+    
+    }
+    /*animaciones navbar*/
+    .btn_cat{
+        display: inline-block;
+        padding: 18px 50px 18px 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--sombra-ppal-1);
+        margin: 10px;
+        width: 70px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .perfil-avatar{
+    border-radius: 50px;
+    width: 50px; 
+    height: 50px;
+    margin: 10px;
+    }
+    .flechaPerfil{
+    width: 20px;
+    margin-left:45px;
+    z-index: 1;
+    margin-top: -37px;
+
+    }
+
+    .nav-perfil{
+        background-color:var(--principal);
+        width: 130px;
+        height: 200px;
+        color: var(--luz-sec-2);
+        display: none;
+        flex-direction: column;
+        font:var(--textos-btn);
+        text-transform: uppercase;
+        text-decoration: solid;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--luz-sec-2);
+        border-color: var(--luz-sec-2);
+    }
+    .nav-perfil.show{
+        display: flex;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        z-index: 3;
+        border-color: var(--luz-sec-2);
+
+    }
+
+    .menu-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        border-color: var(--luz-sec-2);
+    }
+
+    .btn-perfil{
+        display: inline-flex;
+        padding: 10px 20px 10px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--sombra-ppal-1);
+        margin: 5px;
+        color: var(--luz-sec-2);
+        margin: 5px;
+    }
+
+    .carrito-nav{
+        width: 40px; 
+        height: 40px;
+        margin: 10px;
+    }
+    .header-izq{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .desp-carrito{
+        background-color: var(--acento);
+        width: 140px;
+        height: 200px;
+        flex-direction: column;
+        display: none;
+        align-items: start;
+    }
+    .desp-carrito h3{
+        margin: auto;
+        margin-left:10px
+    }
+    .desp-carrito.show{
+        display: flex;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 3;
+    }
+
+    .desp-carrito p{
+        font-family: var(--text-body);
+        font-size: 17px;
+        margin: 0px;
+        margin-left: 10px;
+    }
+
+    .continuar-compra{
+        display: flex;
+        height: 58.929px;
+        width: 100px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid var(--sombra-acento);
+        background: var(--principal);
+        color: var(--acento);
+        margin: auto;
+
+
+    }
+
+    .navbar.show{
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 3;
+    
+    }
+
+    .img-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*Estilos generales para el footer */
+    footer {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--principal);
+        color: var(--luz-sec-2);
+        background-image: url(images/logo.png) op;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 250px;
+        width:100%;
+        
+    }
+    .section1, .section2, .section3{
+        display:flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: center;
+    }
+    .acerca-de{
+    align-content: center;
+    margin: 20px;
+    align-items: center;
+    width: 90%;
+    text-align: justify;
+
+    } 
+    .titulo-footer{
+        text-align: center;
+    }
+
+    .text-footer, .acerca-de, .fat-footer{
+    font-family: var(--text-body);
+    } 
+
+
+    /* Estilos para cada sección del fat footer */
+    .footer-section{
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .footer-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+        list-style-type:none;
+    }
+
+    .footer-section a {
+        color: var(--luz-ppal-1);
+        text-decoration: none;
+    }
+
+    /* Estilos para los enlaces en el fat footer */
+    .footer-section a:hover {
+        text-decoration: underline;
+    } 
+
+    /* Estilos para el contenido de contacto */
+    .footer-section p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* Estilo para las cards*/
+    .carruselCompleto{
+        display: flex;
+        flex-direction: column;
+    }
+     .cat-juego{
+        margin-left: 17px;
+        margin-bottom: 0px;
+    }
+    .carousel{
+      display: -webkit-inline-box;
+      background-color: var(--sombra-ppal-1) ;
+    }
+    .wrapper, .wrapper1{
+        display: flex;
+        max-width: 1200px;
+        position: relative;
+      }
+
+      .wrapper i,.wrapper1 i{
+        top: 50%;
+        height: 44px;
+        width: 44px;
+        color:var(--luz-sec-2);
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background:var(--secundario);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+        z-index: 2;
+      }
+      .wrapper i:active, .wrapper1 i:active{
+        transform: translateY(-50%) scale(0.9);
+      }
+      .wrapper i:hover, .wrapper1 i:hover{
+        background: var(--luz-sec-1)
+      }
+      .wrapper i:first-child, .wrapper1 i:first-child{
+        left: 1px;
+        display: none;
+      }
+      .wrapper i:last-child, .wrapper1 i:last-child{
+        right: 1px;
+      }
+      .wrapper , .wrapper1, .carousel{
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        z-index: 1;
+      }
+      .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+    .contenedor-card-principal .infoCardPaga{
+        z-index: 2;
+        
+    }
+    .contenedor-card, .contenedor-card-principal{
+        background-color: var(--principal);
+
+        position: relative;
+        border: 20px;
+        margin: 10px;
+    }
+    .contenedor-card-principal .imagen-card{
+    width: 140px;
+    height: 90px;
+    margin-left: 10px;
+    
+    }
+    .contenido-card-principal{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contenedor-card-principal{
+    width:160px;
+    height: 150px;
+    display: -webkit-inline-box;
+    flex-direction: column;  
+    }
+    .contenedor-card{
+    display:flex;
+    flex-direction:column;
+     width: 115px;
+     height: 120px;
+     border: 20px;
+     margin: 10px;
+    }
+    .infoCardPaga{
+        height: 40px;
+        margin: 0%;
+        display:flex;
+        flex-direction:column;  
+        margin-top:2px;
+    
+    }
+    .imagen-card{
+        width: 100px;
+        height: 70px;
+        margin-top:7px;
+        margin-left:7px;
+        margin-right: 7px;
+        border-radius: 5px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .infoCardGratis{
+     height: 40px;
+     margin: 0%;
+     display:flex;
+     flex-direction:row;
+     align-items: center;
+     margin-top: 3px;
+    }
+
+
+    .carrito{
+        height: 20px;
+        width: 20px;
+        padding-right: 7px;
+        
+    }
+
+    .play{
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        margin-left: 5px;
+
+    }
+    .infoCardGratis .titulo{
+        justify-content: left;
+        margin-left: 5px;
+ }
+
+    .contenido-card-principal .carrito{
+    height: 20px;
+    width: 25px;
+    margin-right: 0px;
+    }
+    .contenido-card-principal .play{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    
+    }
+    .infoCardGratis .titulo, .infoCardPaga .titulo{
+        width: 80px; /* Ancho máximo del contenedor */
+        white-space: nowrap; /* Evita que el texto se divida en líneas */
+        overflow: hidden; /* Oculta el texto que desborda */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se recorta */
+    }
+    .infoCardPaga .titulo{
+        margin: auto;
+        justify-content: center;
+
+    }
+    .contenido-card-principal .infoCardGratis{
+        margin:auto;
+        margin-left: 10px;
+
+    }
+    .contenido-card-principal .precio, .contenido-card-principal .precio-tachado{
+        font-size: 16px;
+    
+    }
+    .contenido-card-principal .titulo{
+        font-size: 17px;
+        margin:auto;
+         /* margin-left: 10px;
+        */width: 110px; /* Ancho máximo del contenedor */
+        white-space: nowrap; /* Evita que el texto se divida en líneas */
+        overflow: hidden; /* Oculta el texto que desborda */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se recorta */
+    
+    }
+    .titulo{
+        font-family: var(--text-body);
+        font-size: 14px;
+        color: var(--luz-sec-2);
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .precio{
+        font-family: var(--text-body);
+        font-size: 13px;
+        color: var(--luz-sec-2);
+        margin: 0px;
+        margin-left:7px;
+    }
+    .precio, .precio-tachado{
+        color: var(--acento);
+    }
+
+    .precio-tachado{
+        color: var(--estado2);
+        font-size: 9px;
+        text-decoration: line-through;
+    }
+
+    .precio-carrito{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 0%;
+        justify-content: space-between;
+    }
+    
+    .etiqueta-card-gratis, .etiqueta-card-dto{
+        height: 20px;
+        width: 45px;
+        font-family: var(--text-body);
+        font-size: 15px;
+        position: absolute; 
+        top: 0; 
+        right: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        font-weight: 100;
+        
+    }
+    .etiqueta-card-gratis{
+        background-color:var(--secundario);
+        color:var(--luz-sec-2) ;
+    }
+    .etiqueta-card-dto{
+        background-color:var(--acento);
+        color:var(--principal) ;
+
+    }
+
+    .btn-derecha{
+        right: 10px;
+    }
+
+    .btn-izquierda{
+     left: 10px;
+    }
+
+    .cat-juego{
+        font-family: var(--text-body);
+        font-size: 25px;
+        color: var(--luz-sec-2);
+    }
+
+    .carrusel-btns{
+        display: flex;
+        flex-direction: row;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .btn-carrusel-categorias{
+        display: inline-flex;
+        width: 142px;
+        height: 33px;
+        color: var(--luz-sec-2);
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secundario);
+        border-radius: 50px;
+        font: var(--btn-sec);
+        margin-right: 47px;
+        font-family: var(--text-body);
+        text-transform:uppercase;
+        transition: .3s;
+    }
+
+
+
+
+
+
+
+ @media screen and (min-width: 1024px){ 
+        /*estilos para botones animados */ 
+            .btn-perfil{
+                padding: 0px;
+        } 
+        /* estilo para menu hamburguesa */
+        .txt_categoria{
+            font: var(--text-body);
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .navbar{
+        height: 400px;
+        width: 170px;            
+        }
+        .desp-carrito.show{
+        top:69px;
+        }
+        .navbar.show{
+            top:70px;
+        }
+        .navbar{
+        border-right: 2px solid var(--secundario);
+        border-left: 2px solid var(--secundario);
+        border-bottom: 2px solid var(--secundario);
+
+        }
+
+
+        /* Estilos para boton animado menu hamburguesa */
+        .btn_cat{
+            padding: 0px; 
+            overflow: visible;
+            background-color:var(--principal);     
+        }
+        ul.menu {
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        li.btn_cat{
+            width: 150px;
+            height: 50px;
+            color: var(--luz-sec-2);
+            border-left: 0.08em solid;
+            position: relative;
+            margin-top: 0.8em;
+            cursor: pointer;
+        }
+        
+        li.btn_cat::before,
+        li.btn_cat::after
+         {
+            content: '';
+            position: absolute;
+            width: inherit;
+            border-left: inherit;
+            z-index: -1;
+        }
+        
+        li.btn_cat::before {
+            height: 80%;
+            top: 10%;
+            left: calc(-0.15em - 0.08em * 2);
+            filter: brightness(0.8);
+        }
+        
+        li.btn_cat::after {
+            height: 60%;
+            top: 20%;
+            left: calc(-0.15em * 2 - 0.08em * 3);
+            filter: brightness(0.6);
+        }
+        
+        li.btn_cat span {
+            position: relative;
+            height: 120%;
+            top: -10%;
+            box-sizing: border-box;
+            border: 0.08em solid;
+            background-color: var(--principal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--text-body);
+            text-transform: capitalize;
+            transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+            transition: 0.3s;
+        }
+        
+        li.btn_cat:hover span {
+            transform: translateX(0.15em);
+        }
+
+
+        /*** ESTILOS BOTÓN GROW SPIN ***/
+        .ov-btn-grow-spin {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .ov-btn-grow-spin:hover {
+            color: var(--luz-sec-2);/* color de fuente hover */
+        }
+        .ov-btn-grow-spin::after {
+            content: "";
+            background: var(--secundario); /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transform: scale(0, 0) rotate(-180deg);
+            transition: all 0.3s ease;
+        }
+        .ov-btn-grow-spin:hover::after {
+            transition: all 0.3s ease-out;
+            transform: scale(1, 1) rotate(0deg);
+        }
+        /* estilo para boton slide right */
+        
+        .ov-btn-slide-right {
+            background: var(--principal); /* color de fondo */
+            color:var(--luz-sec-2); /* color de fuente */
+            border: 2px solid var(--luz-sec-2); /* tamaño y color de borde */
+            padding: 10px;
+            border-radius: 3px; /* redondear bordes */
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            width: 100px;
+            display: inline-block;
+        }
+        .ov-btn-slide-right:hover {
+            color: var(--principal); /* color de fuente hover */
+        }
+        .ov-btn-slide-right::after {
+            content: "";
+            background: var(--luz-sec-2); /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            right: -100%;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+        .ov-btn-slide-right:hover::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+
+
+        /*** ESTILOS BOTÓN SLIDE LEFT ***/
+        .btn-verMas.ov-btn-slide-left{
+            background-color: var(--principal);
+        }
+        .ov-btn-slide-left {
+            color: var(--luz-sec-2); /* color de fuente */
+            border: 2px solid var(--luz-sec-2); /* tamaño y color de borde */
+            border-radius: 3px; /* redondear bordes */
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            width: 100px;
+        }
+        .ov-btn-slide-left:hover {
+            color: var(--principal); /* color de fuente hover */
+        }
+        .ov-btn-slide-left::after {
+            content: "";
+            background: var(--luz-sec-2); /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            right: 100%;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+        .ov-btn-slide-left:hover::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+
+        main{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .text-footer{
+        width: 300px;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            background-color: var(--principal);
+            color: var(--luz-sec-2);
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 250px;
+        }
+
+        .footer-section ul {
+            padding: 0px;
+        }
+
+        .section1, .section2, .section3{
+            display:flex;
+            flex-direction: column;
+            margin: 10px;
+            justify-content: center;
+        }
+        .acerca-de{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 100px;
+            align-items: center;
+            width: 400px;
+            text-align: justify;
+        
+        }
+
+        .fat-footer {
+            margin-left: 37%;
+            display: flex;
+            flex-direction: row;
+        
+        }
+
+       .buscador{
+        display: block;
+        border-radius: 30px;
+        height: 40px;
+        width: 370px;
+        margin: 15px;    
+        background-color:var(--luz-sec-2);
+       }
+
+       .flechaPerfil{
+        width: 40px;
+        margin-top:-35px;
+         }
+        .nav-perfil.show{
+        top:103px;
+        height: auto;
+        }
+        .btn-perfil:hover{
+            color:var(--secundario);
+            text-decoration: solid;
+        }
+
+    /* Estilo para form resgistro*/
+    .registro .formRegister{
+        height: 510px;
+    }
+    .formRegister{
+        width: 623px;
+        height: 480px;
+        background-color: var(--luz-sec-2);
+        margin: 0px;
+        margin: auto;
+    }
+    .registro .Registrar{
+        display:flex;
+        justify-content:center;
+        margin-top: 10px;
+    }
+
+    .registro .captcha{
+        margin-left: 25px;
+        margin-top:10px;
+    }
+    .registro .registrarse{
+        width: 125px;
+    }
+    .registro .tituloRegistro{
+        margin:5px;
+    }
+    .registro .gmail{
+        margin-top:50px
+    }
+        .registro .tengoCuenta{
+        margin: 0px;
+        }
+        .registro .registrarteCon{
+        margin-top: 100px;
+        align-items: start;
+        margin-right: 30px;
+        }
+        .registro .btn-ingresar{
+        margin: auto;
+        }
+        .headRegistro p{
+            margin-right: 10px;
+        }
+        .headRegistro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        }
+    
+        .tengoCuenta{
+        display: flex;
+        flex-direction: row;
+        }
+        .formularioRegistro{
+        align-content: center;
+        margin-left: 29px;
+        height: 100px;
+        width: 200px;
+        }
+        label{
+        color: var(--sombra-ppal-1);
+        }
+        input{
+        background-color: var(--luz-ppal-1);
+        border-radius: 7px;
+        }
+        .captcha{
+        width: 150px;
+        height: 38px;
+        }
+        .registrarse{
+            display: inline-flex;
+            padding: 8px 19px 7px 20px;
+            height: 33px;
+            color: var(--luz-sec-2);
+            justify-content: center;
+            align-items: center;
+            background-color: var(--principal);
+            border-radius: 50px;
+            font: var(--btn-sec);
+            letter-spacing: 3px;
+        }
+        .tituloRegistro{
+            margin: 20px;
+    
+        }
+        .btn-ingresar{
+            font-family: var(--btn-sec);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            width: 80px;
+            margin-left: 7px;
+            margin-top: 16px;
+            height: 20px;
+            align-items: center;
+            background-color: var(--principal);
+            color: var(--luz-sec-2);
+        }
+        .registrate{
+        margin-left: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--luz-sec-2);
+        
+        }
+        .registrarteCon{
+        display: flex;
+        flex-direction: column;
+        margin-right: 26px;
+        margin-top: 45px;
+        }
+        .facebook{   
+            background-color: #3b5998;
+            border-color: #3b5998;
+        }
+        .facebook, .gmail{
+            margin-top: 49px;
+            width: 271px;
+            height: 34px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-width: 2px;
+            border-style: solid;
+            display: flex;
+        
+        }
+        .gmail{
+            background-color: #00A1F1;
+            border-color: #00A1F1;
+        
+        }
+        .logoMail{
+            width: 51px;
+            height: 34px;
+            border-color: #00A1F1;
+        }
+        .logoFb{
+            border-color: #3b5998;
+
+        }
+        .logoFb, .logoMail{
+            margin-left: 0px;
+            border-width: 2px;
+            border-style: solid;
+        }
+        .continuarCon{
+            margin-left: 28px;
+        
+        }
+
+        .registros{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        
+        /* eEstilo para las cards */ 
+     .carrusel-btns{
+            margin-left: 49px;
+        }
+    
+    .carousel{
+             display: -webkit-inline-box;
+
+    }
+    .contenedor-card{
+        width: 178px;
+        height: 181px;
+
+    }
+    .contenedor-card .imagen-card{
+        margin: 3px;
+        border-radius: 10px;
+    }
+    .imagen-card{
+        width: 167px;
+        height: 120px;
+    }
+    .titulo{
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        overflow: hidden; /* Ocultar el texto que no cabe en la tarjeta */
+    }
+    .play, .carrito{
+        width: 22px;
+        height: 25px;
+    }
+    .precio, .precio-tachado{
+        font-size: 18px;
+    }
+    .precio{
+        margin-right: 5px;
+    }
+
+    .contenido-card-principal{
+        display: flex;
+        justify-content: space-between;
+ }
+
+    .precio-carrito{
+        align-items: normal;
+    
+    }
+    .contenedor-card .infoCardPaga{
+        height: 40px;
+        display:block;
+    
+    }
+
+    .contenedor-card .infoCardPaga .titulo{
+        /*display: block; */
+        display: block;
+        width: 130px; /* Cambié el ancho máximo a 250px */
+        margin-left: 7px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el texto que desborda */
+        text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar que hay más texto oculto */
+        
+    }
+    .contenedor-card .infoCardGratis .titulo{
+    
+        display: block;
+    }
+    
+
+    .contenido-card-principal .infoCardGratis{
+        margin: auto;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .contenido-card-principal .infoCardGratis .play, .contenido-card-principal .infoCardPaga .carrito{
+        width: 38px;
+        height: 33px;
+    }
+    .contenido-card-principal .infoCardPaga{
+        height: 90px;
+        margin-left: 10px;
+    }
+
+    .play{
+        display: flex;
+        margin-right: 16,49px;
+    }
+    .infoCardGratis .titulo{
+        justify-content: left;
+        margin-left: 5px;
+        overflow: hidden; /* Oculta el texto que desborda */
+   
+        
+    }
+   
+    .infoCardGratis .titulo, .infoCardPaga .titulo{
+        width: 130px; /* Ancho máximo del contenedor */
+        white-space: nowrap; /* Evita que el texto se divida en líneas */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se recorta */
+    }
+    .infoCardPaga .titulo{
+        margin: auto;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .infoCardGratis{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .etiqueta-card-gratis, .etiqueta-card-dto{
+        width: 80px;
+        height: 26px;
+        text-align: center;
+        margin-right: -18px;
+        font-size: 20px;
+    }
+    span.etiqueta-card-dto, span.etiqueta-card-gratis{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Propiedad box-shadow */   
+     }
+     .cucarda{
+        margin-right: 0px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+     .baseCucarda{
+        display: block;
+        width: 50px;
+        height: 41px;
+        margin-top: 21px;
+        margin-right: -32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .contenedor-card-principal{
+        width: 310px;
+        height: 250px;
+        transition: transform 0.3s, opacity 0.3s;
+        transform: scale(1);
+        opacity: 1;
+    }
+    .contenedor-card-principal:hover{
+        transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+        opacity: 0.8; /* Reduce la opacidad al hacer hover */
+        z-index: 3;
+    }
+
+    .contenedor-card-principal .imagen-card{
+        width: 290px;
+        height: 175px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    .contenedor-card-principal .titulo{
+        font-size: 25px;
+        overflow: visible;
+    }
+    .contenedor-card-principal .infoCardPaga .titulo {
+        display: block;
+        width: 250px; /* Cambié el ancho máximo a 250px */
+        margin-left: 7px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el texto que desborda */
+        text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar que hay más texto oculto */
+    }
+    
+    .contenedor-card-principal .infoCardGratis .titulo{
+        display: block;
+        width: 230px; /* Cambié el ancho máximo a 250px */
+        margin-left: 7px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el texto que desborda */
+        text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar que hay más texto oculto */
+    }
+    .contenedor-card-principal .precio, .contenedor-card-principal .precio-tachado{
+        font-size: 25px;
+    }
+    .contenedor-card-principal .carrito{
+        margin-top: -10px;
+    
+    }
+    .contenedor-card-principal .precio-tachado{
+        margin-left: -120px;
+    
+    }
+    .contenedor-card .precio-tachado{
+        margin-left: -45px;
+    }
+
+    /* Estilos para menu ejecucion */
+    .img-4enlinea{
+        width: 650px;
+        height: 650px;
+
+    }
+    #canvas{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 6%;
+    }
+
+
+    .instrucciones{
+        color: var(--luz-sec-2);
+        border-bottom: solid var(--luz-sec-2) 1px;
+        border-top: solid var(--luz-sec-2) 1px;
+        margin-top: 5px;
+
+    }
+
+    .encabezado-juego h1{
+        margin: 0px;
+    }
+    .encabezado-juego{
+        color: var(--luz-sec-2);
+        margin: 10px;
+    }
+
+    .instruccion{
+       height: 120px;
+       width: 120px; 
+        margin: 30px;
+    }
+    .instrucciones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tutoriales{
+        margin-top: -55px;
+    }
+    
+    .deQueTrata,.controles {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .controles, .img-comojugar{
+        margin-left: 40px;
+    }
+    .comoJugar ,.img-comojugar{
+        width: 45%;
+    }
+
+    .input-nuevo-comentario{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--luz-sec-2);
+        width: 600px;
+        height: 30px;
+    }
+
+    .comentarios h2, .comentarios h3{
+        font-family: var(--text-body);
+        color: var(--luz-sec-2);
+        
+    }
+
+    .nuevo-comentario{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .comentario p{
+        font-weight:bold;
+        color: var(--sombra-ppal-2);
+
+    }
+    .comentario span {
+        margin-left: 10px;
+    }
+    .btn-agregar{
+        height: 35px;
+        background-color: var(--luz-sec-2);
+        border-radius: 7px;
+    }
+
+    .comentario{
+        background-color: var(--luz-sec-2);
+        color: var(--sombra-ppal-1);
+        width: 600px;
+        height: 65px;
+        margin-bottom: 30px;
+        
+    }
+    .ultimos-comentarios{
+        margin-top: 40px;
+    }
+    .comentarios-adicionales, .btn-verMenos{
+        display: none;
+    
+    }
+    /* Estilos para el ícono dentro del input */
+    .input-con-icono {
+        position: relative;
+    }
+
+    .input-con-icono span {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: var(--luz-ppal-2);
+        cursor: pointer;
+    }
+
+    .input-con-icono span:hover {
+        color:var(--sombra-ppal-1);
+    }
+
+    .avatar-comentario{
+        border-radius: 50%;
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .encabezado-comentario{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        border-bottom: solid 1px var(--luz-ppal-2);
+    }
+
+
+    /*Estilos para login */
+    .login .formRegister{
+        width: 340px;
+        height: 450px;
+    }
+    .login .login{
+        margin: 0px;
+        display: block;
+    }
+    .login .titulo, p, .registrarteCon{
+        margin: 0px;
+    }
+    .login{
+        justify-content: center;
+    }
+    .facebook{
+        margin-top: 0px;
+ 
+    } 
+    .facebook, .gmail{
+        margin-left: 47px;
+        width: 245px;
+        height: 34px;
+
+    }
+    .registrate{
+        margin: 0px;
+        padding-left: 15px;
+    }
+    .gmail{
+        margin-top: 12px;
+    }
+    .login .tituloRegistro{
+        display: flex;
+        justify-content: center;
+    
+    }
+    .separadorReg{
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+    }
+    .separadorReg .lineaSeparador{
+        flex-grow: 1;
+        height: 1px;
+        background-color: var(--luz-ppal-2); /* Color de la línea */
+        margin: 0 10px; /* Espacio alrededor de la línea */
+    }
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+    }
+    .formLogin label{
+        font-size: 15px;
+    }
+    .formLogin input{
+        height: 20px;
+        width: 280px;
+    }
+    .inputEmail{
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    }
+    .login .captcha{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .login .registrar{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .login .btn-ingresar{
+        margin: 0px;
+        margin-left: 16px;
+    }
+    .login .registrarse{
+        margin: auto;
+        margin-top: 20px;
+        width: 125px;
+    }
+    .login a, .registro a, .btn-perfil a, .breadcrum a, .carrusel-btns a, .menu a {
+        color: var(--luz-sec-2);
+        text-decoration: none;
+    }
+    .login a:hover, .registro a:hover, .breadcrum a:hover, .carrusel-btns a:hover, .menu a:hover{
+        text-decoration: underline;
+    } 
+
+    .spinner-container {
+        text-align: center;
+        margin-top: 70px;
+
+    }
+  
+  
+    #porcentaje-carga{
+        color: var(--luz-sec-2);
+    }
+    /* Aplica un efecto de desvanecimiento a la imagen con la clase ".logoSpinner" */
+    .logoSpinner {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .spinner {
+        border: 8px solid #3498db;
+        border-top: 8px solid transparent;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
+    #mensaje {
+        display: none;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        opacity: 0; 
+        transition: opacity 1s; 
+    }
+    .mensaje{
+    background-color: var(--luz-ppal-1);
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 300px;
+    display: none;
+    font: 'Roboto';
+    color: var(--luz-sec-2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    }
+
+    .redireccion{
+        font-size: 15px;
+    }
+
+    .endButton{
+        display: none;
+    }
+    .startButton{
+        display: block;
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #0074D9; 
+        color: white; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+        align-content: center;
+
+    }
+    .buttonContainer {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo de color con opacidad */
+        padding: 20px;
+        border-radius: 10px; /* Bordes redondeados */
+      }
+
+      #timerDisplay {
+        color: white;
+        position: absolute;
+        top: 160px; /* Ajusta la posición vertical según tus necesidades */
+        left: 350px; /* Ajusta la posición horizontal según tus necesidades */
+        margin-left: 3%;
+    }
+    
+    .timer {
+        background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+
+    #turnoDisplay{
+        display: none;
+        position: absolute;
+        top: 180px;
+        right: 450px;
+        color: whitesmoke;
+    }
+
+    #turnoTexto{
+        color: whitesmoke;
+    }
+}
+

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Juegos Onda</title>
+</head>
+<body>
+    <header class="header">
+       <div class="img-header">
+            <div class="header-izq">
+                <img class="btnmenu" src="images/hamburger-button2.png" onclick="toggleMenu()">
+                <a href="index.html"><img src="images/logo.png" class="logoheader"></a>
+            </div>
+            <input type="text" class="buscador">
+            <div class="header-der">
+                <img src="images/carrito.svg" class="carrito-nav" onclick="toggleCarrito()">
+                <img src="images/avatar.png" class="perfil-avatar" alt="avatar" onclick="togglePerfil()">
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <p class="txt_categoria">categorias</p>
+                <a href="index.html#masjugados"><li class="btn_cat"><span>Mas jugados</a></span></li>
+                <a href="index.html#nuevos"><li class="btn_cat"><span>Nuevos</a></span></li>
+                 <a href="index.html#accion"><li class="btn_cat"><span>Acción</a></span></li>
+                 <a href="index.html#shooter"><li class="btn_cat"><span>Shooter</a></span></li>
+                 <a href="index.html#arcade"><li class="btn_cat"><span>Arcade</a></span></li>
+            </ul>
+        </nav>
+        <div class="desp-carrito">
+                <h3>Resumen de compra</h3>
+                <p>Fall guys</p><p>$999</p>
+                <p>Total</p><p>$999</p>
+                <button class="continuar-compra">Continuar compra</button>
+        </div>
+        <nav class="nav-perfil">
+            <img class="flechaPerfil" src="images/flechaPerfil.png" alt="">
+            <ul class="menu-perfil">
+                <li class="btn-perfil"><a href="" class="ov-btn-slide-left">Mi perfil</a></li>
+                <li class="btn-perfil"><a href="index.html" class="ov-btn-slide-left">Favoritos</a></li>
+                <buttom class="btn-perfil"><a href="login.html" class="ov-btn-slide-left">Cerrar Sesion</a></buttom>
+            </ul>
+        </nav>
+    </header> 
+     <div class="spinner-container">
+        <div class="spinner"></div>
+        <div id="porcentaje-carga">0%</div>
+        <img  class="logoSpinner" src="images/logo.png" alt="logo">
+    </div>
+    <main class="index">
+        <div class="carruselCompleto">
+            <h2 class="cat-juego" id="masjugados">Más jugados</h2>
+            <section class="wrapper1">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <div class="contenedor-card-principal" draggable="false">
+                        <section class="contenido-card-principal">
+                            <div class="cucarda">
+                                <span class="etiqueta-card-dto">-30%</span>
+                                <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                                </div>
+                            <img class="imagen-card" src="images/destacado1.jpeg">
+                            <div class="infoCardPaga">
+                                <p class="titulo">Fall Guys</p>
+                                <div class="precio-carrito">
+                                    <span class="precio">$1000</span><span class="precio-tachado">$4400</span>
+                                    <img class="carrito"src="images/Vector.svg">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="contenedor-card-principal" draggable="false">
+                        <section class="contenido-card-principal">
+                        <div class="cucarda">
+                        <span class="etiqueta-card-gratis">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                        </div>
+                        <img class="imagen-card" src="images/foto-juego.png">
+                        <div class="infoCardGratis">
+                           <p class="titulo">Android vs. Apple</p>
+                            <a href="ejecucion.html"> <img class="play"src="images/boton-play.png"></a>
+                        </div>
+                    </section>
+                    </div>
+                    <div class="contenedor-card-principal" draggable="false">
+                        <section class="contenido-card-principal">
+                        <div class="cucarda">
+                            <span class="etiqueta-card-gratis">Gratis</span>
+                            <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                            </div>                    <img class="imagen-card" src="images/destacado3.webp">
+                        <div class="infoCardGratis">
+                            <p class="titulo">Snake 2</p>
+                                <img class="play"src="images/boton-play.png">
+                        </div>
+                    </section>
+                    </div>
+                    <div class="contenedor-card-principal" draggable="false">
+                        <section class="contenido-card-principal">
+                        <div class="cucarda">
+                            <span class="etiqueta-card-dto">-80%</span>
+                            <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                            </div>
+                        <img class="imagen-card" src="images/destacado4.webp">
+                        <div class="infoCardPaga">
+                            <p class="titulo">Pacman</p>
+                            <div class="precio-carrito">
+                                <span class="precio">$200</span><span class="precio-tachado">$2500</span>
+                                <img class="carrito"src="images/Vector.svg">
+                            </div>
+                        </div>
+                    </section>
+
+                    </div>
+                    <div class="contenedor-card-principal" draggable="false">
+                        <section class="contenido-card-principal">
+                        <div class="cucarda">
+                            <span class="etiqueta-card-dto">-40%</span>
+                            <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                            </div>
+                        <img class="imagen-card" src="images/destacado5.webp">
+                        <div class="infoCardPaga">
+                            <p class="titulo">Mini Craft</p>
+                            <div class="precio-carrito">
+                                <span class="precio">$400</span><span class="precio-tachado">$2500</span>
+                                <img class="carrito"src="images/Vector.svg">
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                </div> 
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </section>
+        </div>
+        <div class="carruselCompleto">
+        <h2 class="cat-juego" id="nuevos">Nuevos</h2>
+        <section class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                    <span class="etiqueta-card-gratis">Gratis</span>
+                    <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/nuevos1.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Bloxd.io</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                    <span class="etiqueta-card-gratis">Gratis</span>
+                    <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/nuevos2.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Friday Night</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-25%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/nuevos3.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">UNO </p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                    <span class="etiqueta-card-gratis">Gratis</span>
+                    <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/nuevos4.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Washing Toilet</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/nuevos5.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Princess</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$600</span><span class="precio-tachado">$1800</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/nuevos6.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Fuego y Agua</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/nuevos7.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Fuego y Agua</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/nuevos8.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Fuego y Agua</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </section>
+        </div>
+        <div class="carruselCompleto">
+            <h2 class="cat-juego">Explorar categorias</h2>
+                <section class="carrusel-btns">
+                    <a href="#accion">  <button class="btn-carrusel-categorias"></span>Acción</a></button>
+                    <a href="#arcade"> <button class="btn-carrusel-categorias"></span>Arcade</a></button>
+                    <a href="#shooter"><button class="btn-carrusel-categorias"></span>Shooter</a></button>
+                    <a href="#nuevos"><button class="btn-carrusel-categorias"></span>Nuevos</a></button>
+                    <a href="#masjugados"><button class="btn-carrusel-categorias"></span>Mas jugados</a></button>
+                </section>
+            </div> 
+        <div class="carruselCompleto">
+        <h2 class="cat-juego" id="accion">Acción</h2>
+        <section class="wrapper">
+            <i class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/accion.jpg">
+                    <div class="infoCardPaga">
+                        <p class="titulo">GOD</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-gratis">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                        </div>
+                        <img class="imagen-card" src="images/accion2.jpg">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Halo 3</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/accion3.jpg">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Halo 2</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/accion4.jpg">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Zero Hour 4</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                        </div>
+                    <img class="imagen-card" src="images/accion5.jpg">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Red Dead</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <img class="imagen-card" src="images/accion6.jpg">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Assesins Creed</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-gratis">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                        </div>
+                        <img class="imagen-card" src="images/accion7.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Shell Shockers</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                
+            </div> 
+            <i class="fa-solid fa-angle-right"></i>
+        </section>
+        </div>   
+        <div class="carruselCompleto">
+        <h2 class="cat-juego" id="shooter">Shooter</h2>
+        <section class="wrapper">
+            <i class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/shooter1.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Centipede</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-gratis">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                        </div>
+                            <img class="imagen-card" src="images/shooter2.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Battle of Seas</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-gratis">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                    </div>
+                        <img class="imagen-card" src="images/shooter3.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Battleship</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/shooter4.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Demon Killer</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/shooter5.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Gun War ZZ</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/funny-shooter.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Funny Shooter</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <i class="fa-solid fa-angle-right"></i>
+        </section>
+        </div>
+         <div class="carruselCompleto">
+        <h2 class="cat-juego" id="arcade">Arcade</h2>
+        <section class="wrapper">
+            <i class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/arcade1.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Boxes Wizard</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <span class="etiqueta-card-gratis">Gratis</span>
+                    <img class="imagen-card" src="images/arcade2.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">cubito</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-gratis">Gratis</span>
+                        <img class="baseCucarda" src="images/etiqueta (2).png" alt="">
+                        </div>                    <img class="imagen-card" src="images/arcade3.webp">
+                    <div class="infoCardGratis">
+                        <p class="titulo">Flip Diving</p>
+                            <img class="play"src="images/boton-play.png">
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/arcade4.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Fruit Ninja</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <div class="cucarda">
+                        <span class="etiqueta-card-dto">-50%</span>
+                        <img class="baseCucarda" src="images/etiqueta-dto.png" alt="">
+                    </div>
+                    <img class="imagen-card" src="images/arcade5.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Funny Food</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" draggable="false">
+                    <img class="imagen-card" src="images/arcade6.webp">
+                    <div class="infoCardPaga">
+                        <p class="titulo">Lumeno</p>
+                        <div class="precio-carrito">
+                            <span class="precio">$500</span><span class="precio-tachado">$2500</span>
+                            <img class="carrito"src="images/Vector.svg">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <i class="fa-solid fa-angle-right"></i>
+        </section>
+    </div>
+    </main> 
+    <footer class="footerHome">
+        <section class="acerca-de">
+            <h2 class="titulo-footer">Acerca de nosotros</h2>
+            <span class="text-footer">Bienvenidos a nuestra plataforma de juegos en línea, tu destino favorito para sumergirte en emocionantes aventuras virtuales. Permítenos presentarnos: somos Mateo Viera y Alfonsina Moris, estudiantes de la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN), inscriptos en la carrera de Tecnología Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI).</span>
+        </section>
+        <div class="fat-footer">
+            <section class="section1">
+                <div class="footer-section">
+                    <h2>Tendencia</h2>
+                    <ul>
+                        <li><a href="index.html#arcade">Arcade</a></li>
+                        <li><a href="index.html#accion">Acción</a></li>
+                        <li><a href="index.html#shooter">Shooter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Nosotros</h2>
+                    <ul>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Lugar</a></li>
+                        <li><a href="#">Se parte</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section2">     
+                <div class="footer-section">
+                    <h2>Redes sociales</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Informacíon</h2>
+                    <ul>
+                        <li><a href="/acerca-de">Ayuda</a></li>
+                        <li><a href="/politica-de-privacidad">Desarrollo</a></li>
+                        <li> <a href="">Docu</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="footer-section">
+                    <h2>Tendencia</h2>
+                    <ul>
+                        <li><a href="#">Arcade</a></li>
+                        <li><a href="#">Estrategia</a></li>
+                        <li><a href="#">Deportes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Enlaces útiles</h2>
+                    <ul>
+                        <li><a href="/acerca-de">Cookies</a></li>
+                        <li><a href="/politica-de-privacidad">Políticas</a></li>
+                        <li> <a href="">Términos</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+    </html>
+    
+    <script src="js/menu.js"></script>
+</body>
+</html>
